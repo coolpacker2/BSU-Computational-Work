@@ -7,7 +7,7 @@ async def main():
     devices = await BleakScanner.discover()
     for d in devices:
         print(d.address, d.name)
-        if d.address == "D4:FB:85:4B:B7:67":
+        if d.address == "D8:4D:72:C3:B7:4B":           #D4:FB:85:4B:B7:67 is kamigami
             print("Found")
             async with BleakClient(d, timeout=22.0) as client:
                 print("Services:")   

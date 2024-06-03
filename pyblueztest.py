@@ -5,7 +5,7 @@ def discover_devices():
     if nearby_devices:
         print("Found %d devices:" % len(nearby_devices))
         for addr, name, _ in nearby_devices:
-            if addr == "D8:0F:99:43:06:A0":
+            #if addr == "D8:0F:99:43:06:A0":
                 print("Device Name:", name)
                 print("Device Address:", addr)
                 print("Services:")
